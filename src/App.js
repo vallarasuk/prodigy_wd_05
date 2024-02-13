@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Entertainment from "./Components/Entertainment";
+import Education from "./Components/Education";
+import Tourism from "./Components/Tourism";
+import Food from "./Components/Food";
+import Business from "./Components/Business";
+import Home from "./Components/Home";
 
-function App() {
+const topics = [
+  { path: "/business", name: "Business", component: Business },
+  { path: "/entertainment", name: "Entertainment", component: Entertainment },
+  { path: "/education", name: "Education", component: Education },
+  { path: "/tourism", name: "Tourism", component: Tourism },
+  { path: "/food", name: "Food", component: Food },
+  { path: "/", name: "Home", component: Home },
+];
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          {topics.map((topic, index) => (
+            <Route
+              key={index}
+              path={topic.path}
+              element={<topic.component />}
+            />
+          ))}
+        </Routes>
+      </Router>
+    </>
   );
-}
+};
 
 export default App;

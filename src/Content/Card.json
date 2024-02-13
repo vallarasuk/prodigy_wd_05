@@ -1,0 +1,10 @@
+{
+    "card": {
+      "background": "#f8f9fa",
+      "title": "#343a40",
+      "description": "#6c757d",
+      "button": "#007bff",
+      "buttonBorder": "#007bff"
+    }
+  }
+  

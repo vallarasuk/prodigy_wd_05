@@ -1,0 +1,37 @@
+[
+  {
+    "path": "/crime",
+    "name": "Crime",
+    "component": "Crime"
+  },
+  {
+    "path": "/business",
+    "name": "Business",
+    "component": "Business"
+  },
+  {
+    "path": "/entertainment",
+    "name": "Entertainment",
+    "component": "Entertainment"
+  },
+  {
+    "path": "/education",
+    "name": "Education",
+    "component": "Education"
+  },
+  {
+    "path": "/domestic",
+    "name": "Tourism",
+    "component": "Tourism"
+  },
+  {
+    "path": "/food",
+    "name": "Food",
+    "component": "Food"
+  },
+  {
+    "path": "/",
+    "name": "Home",
+    "component": "Home"
+  }
+]
